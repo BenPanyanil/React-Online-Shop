@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../img/storeIcon.png';
+import logo from '../storeIcon.png';
 import styled from 'styled-components'
 import { ButtonContainer } from './Button';
 
