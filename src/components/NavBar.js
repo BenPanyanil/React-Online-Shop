@@ -1,29 +1,25 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../storeIcon.png';
+import logo from '../Beseatslogo.png';
 import styled from 'styled-components'
-import { ButtonContainer } from './Button';
 
 
 export default class NavBar extends Component {
   render() {
     return (
-      <NavWrapper className='navbar navbar-expand-sm navbar-dark px-sm-5'>
+      <NavWrapper className='navbar navbar-expand-sm px-sm-5 pb-4 d-flex align-items-end'>
         <Link to='/'>
-          <img src={logo} alt="store" className="navbar-brand" width="60"></img>
+          <img src={logo} alt="store" className="navbar-brand" width="140"></img>
         </Link>
-        <ul className="navbar-nav align-items-center">
+        <ul className="navbar-nav">
           <li className="nav-item ml-5">
-            <Link to='/' className="nav-link">Products</Link>
+            <Link to='/' className="nav-link">tuotteet</Link>
           </li>
         </ul>
         <Link to='/cart' className='ml-auto'>
-          <ButtonContainer>
-            <span className="mr-2">
-              <i className="fas fa-cart-plus"></i>
-            </span>
-            My cart
-          </ButtonContainer>
+          <span className="mr-2">
+            <i className="fas fa-shopping-bag"></i>
+          </span>
         </Link>
       </NavWrapper>
     )
@@ -31,10 +27,18 @@ export default class NavBar extends Component {
 }
 
 const NavWrapper = styled.nav`
-  background: var(--mainBlue);
+  background: var(--mainWhite);
   .nav-link {
-    color: var(--mainWhite) !important;
-    font-size 1.3rem;
+    color: var(--mainDark) !important;
     text-transform: capitalize;
+  }
+
+  a {
+    color: var(--mainDark) !important;
+    padding: 0 !important;
+
+    i {
+      font-size: 24px;
+    }
   }
 `

@@ -1,13 +1,15 @@
 :root {
   --mainBlue: #2a2a74;
   --lightBlue: #009ffd;
-  --mainWhite: #f3f3f3;
-  --mainDark: #232528;
-  --mainYellow: #ffa400;
+  --mainWhite: #ffffff;
+  --mainDark: #212121;
+  --mainYellow: #ff971d;
+  --mainGrey: #f9f6f7;
+  --mainBeige: #ffe8d6;
 }
 
 body {
-  background: var(--mainWhite) !important;
+  background: var(--mainGrey) !important;
   color: var(--mainDark) !important;
 }
 
